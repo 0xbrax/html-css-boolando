@@ -4,3 +4,45 @@
     box-sizing: border-box;
 }
 
+
+header {
+    background-color: #ff6900;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 1px 30px 5px rgb(68, 68, 68);
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-menu {
+    width: 20%;
+}
+
+.main-menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-logo {
+    width: 60%;
+}
+
+#main-logo {
+    height: 40px;
+    display: block;
+    margin: auto;
+}
+
+.header-icon {
+    width: 20%;
+    text-align: right;
+}
+
