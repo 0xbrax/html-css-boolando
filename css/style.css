@@ -9,14 +9,20 @@ a:visited {text-decoration: none;}
 a:active {text-decoration: none;}
 a:hover {text-decoration: underline;}
 
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
 header {
     color: #FFF;
-    background-color: #ff6900;
+    background-color: #FF6900;
     padding: 20px 0;
     position: fixed;
     z-index: 9999;
     width: 100%;
-    box-shadow: 0 1px 30px 5px rgb(68, 68, 68);
+    box-shadow: 0 1px 30px 5px rgb(67, 67, 67);
 }
 
 .header-container {
@@ -82,7 +88,7 @@ main {
 .card-container {
     min-width: 300px;
     width: calc(97% / 3);
-    padding-bottom: 20px;
+    padding-bottom: 40px;
 }
 
 .img-container {
@@ -91,6 +97,7 @@ main {
 
 .img-item {
     width: 100%;
+    display: block;
 }
 
 .img-item.img-show2 {
@@ -102,14 +109,15 @@ main {
 }
 
 .img-container:hover .img-show2 {
-    display: inline-block;
+    display: block;
 }
 
 .card-container > a {
     display: block;
     color: #000;
     text-decoration: none;
-    background-color: aqua;
+    background-color: #FFF;
+    padding: 5px 10px 0 10px;
 }
 
 .tag-container {
@@ -156,4 +164,53 @@ main {
 
 a > span.price2 {
     text-decoration: line-through;
+}
+
+footer {
+    background-color: #1A1A1A;
+    color: #FFF;
+    font-size: 12px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 0;
+    position: relative;
+}
+
+.bottom-txt {
+    list-style: none;
+}
+
+.bottom-txt a {
+    color: #FFF;
+}
+
+.bottom-txt li {
+    float: left;
+    margin-right: 10px;
+}
+
+.txt-contact {
+    position: absolute;
+    right: 0;
+    top: 20px
+}
+
+.txt-contact h4 {
+    text-align: right;
+}
+
+.txt-contact p {
+    text-align: right;
+    font-size: 16px;
+}
+
+.txt-contact i {
+    margin-left: 10px;
+}
+
+.footer-container ul, .footer-container p {
+    margin-top: 5px;
 }
