@@ -46,3 +46,78 @@ header {
     text-align: right;
 }
 
+main {
+    padding-top: 120px;
+}
+
+.card-body {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.card-container {
+    width: calc(97% / 3);
+}
+
+.img-container {
+    position: relative;
+}
+
+.img-item {
+    width: 100%;
+}
+
+.img-item.img-show2 {
+    display: none;
+}
+
+.img-container:hover .img-show1 {
+    display: none;
+}
+
+.img-container:hover .img-show2 {
+    display: inline-block;
+}
+
+.card-container > a {
+    display: block;
+    height: 100px;
+    background-color: aqua;
+}
+
+.tag-container {
+    position: absolute;
+    bottom: 20px;
+}
+
+.tag1, .tag2 {
+    display: inline-block;
+    padding: 10px;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+.tag1 {
+    background-color: red;
+}
+
+.tag2 {
+    background-color: green;
+}
+
+.heart-container {
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+
+.heart-button {
+    font-size: 20px;
+    padding: 10px;
+    border: 0;
+    background-color: lightgreen;
+}
+
+.heart-button:hover {
+    color: red
+}
