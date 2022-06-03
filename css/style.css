@@ -15,10 +15,14 @@ a:hover {text-decoration: underline;}
     clear: both;
 }
 
+body {
+    font-family: Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
 header {
     color: #FFF;
     background-color: #FF6900;
-    padding: 20px 0;
+    padding: 15px 0;
     position: fixed;
     z-index: 9999;
     width: 100%;
@@ -52,16 +56,22 @@ header {
     color: #FFF;
     font-weight: bold;
     padding: 10px;
+    margin: 0 5px;
 }
 
 .header-logo {
     width: 60%;
+    display: flex;
+    justify-content: center;
 }
 
 #main-logo {
     height: 40px;
-    display: block;
-    margin: auto;
+}
+
+.header-logo a {
+    display: inline-block;
+    padding: 10px;
 }
 
 .header-icon {
@@ -69,8 +79,10 @@ header {
     text-align: right;
 }
 
-.header-icon i {
-    margin: 10px;
+.header-icon a {
+    color: #FFF;
+    padding: 10px;
+    margin: 0 5px;
 }
 
 main {
@@ -175,7 +187,7 @@ footer {
 .footer-container {
     max-width: 1200px;
     margin: auto;
-    padding: 20px 0;
+    padding: 30px 0;
     position: relative;
 }
 
@@ -195,7 +207,7 @@ footer {
 .txt-contact {
     position: absolute;
     right: 0;
-    top: 20px
+    top: 20px;
 }
 
 .txt-contact h4 {
@@ -204,10 +216,11 @@ footer {
 
 .txt-contact p {
     text-align: right;
-    font-size: 16px;
+    font-size: 20px;
 }
 
-.txt-contact i {
+.txt-contact a {
+    color: #FFF;
     margin-left: 10px;
 }
 
